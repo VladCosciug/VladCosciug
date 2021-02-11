@@ -1,0 +1,58 @@
+.header
+    display: flex
+    justify-content: center
+    align-items: center
+    &__logo
+        width: 95px
+        margin-right: 34px
+        img
+            width: 100%
+    &__nav
+        display: flex
+        justify-content: space-between
+        margin-right: 25px
+    &__link
+        font-size: 15px
+        font-weight: 500
+        border-right: 1px dotted #fff
+        padding: 0 13px
+        color: #ffffff
+        font-size: 15px
+        font-weight: normal
+        text-decoration: none
+        transition: .4s ease-out
+        position: relative
+        &:last-child
+            border-right: none
+        &:hover
+            color: $orange
+        &:after
+            display: block
+            content: ""
+            background-color: $orange
+            margin-top: 3px
+            width: 0
+            height: 2px
+            position: absolute
+            left: 50%
+            transition: .4s ease-out
+            transform: translateX(-50%)
+    &__link:hover:after
+        width: 80%
+    &__wrapper
+        margin-right: 15px
+        span
+            display: flex
+            justify-content: flex-end
+            font-size: 14px
+            font-weight: 300
+            color: #fff
+    &__phone
+        display: flex
+        font-size: 19px
+        font-weight: 700
+        color: #fff
+        text-decoration: none
+        &:hover
+            color: #fff
+            text-decoration: underline
